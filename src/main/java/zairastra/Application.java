@@ -22,6 +22,11 @@ public class Application {
         Event concerto = new Event("Concerto in Sila", LocalDate.of(2025, 8, 3), "BeAlternativeFest", EventType.PUBLIC, 789);
         Event controllo = new Event("Mappatura nei", LocalDate.of(2025, 7, 6), "Appuntamento dermatologico", EventType.PRIVATE, 2);
 
+        //SALVO GLI EVENTI
+        ed.saveEvent(matrimonio);
+        ed.saveEvent(concerto);
+        ed.saveEvent(controllo);
+        
         //RICORDATI DI CHIUDERE DOPO CHE LO USI
         em.close();
         emf.close();
