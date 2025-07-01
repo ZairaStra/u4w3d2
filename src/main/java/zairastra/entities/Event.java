@@ -1,0 +1,16 @@
+package zairastra.entities;
+
+//RICORDATIIII!!!
+//PRIMA CREI LE CLASSI E SOLO DOPO AGGIUNGI LA CARTELLA RESOURCES COI FILE PERSISTENCE DENTRO
+
+import jakarta.persistence.*;
+
+@Entity //  QUESTO è FONDAMENTALE PER LEGARE AL DB
+
+@Table(name = "events") // QUESTO è OPZIONALE - CAMBIA IL NOME DELLA TABELLA
+public class Event {
+    @Id //FONDAMENTALE - SERVE A IDENTIFICARE LA PK DELLA COLONNA
+
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // OPZIONALE - GENERA LE SINGOLE CHIAVI AUTOMATICAMENTE
+    private long id;
+}
